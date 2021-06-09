@@ -1,9 +1,7 @@
 var myName = "William";
 var classDescription = "Computer Science 190";
 var theDate = "6/8/2021";
-var firstname = "Billy";
-var l_name = "Bob"
-var fullName = firstname + l_name;
+
 
 function confirmlink(linkname) {
     if (confirm("Are you sure you want to jump to " + linkname + "?"))
@@ -15,4 +13,23 @@ function confirmlink(linkname) {
          location = displayInfo;
  }
  
- console.log(fullName);
+     // declare this variable outside of your functions
+     var currentspecial = 1     // selects which item that is "on special"
+
+     function displayspecial() {
+ 
+        if (currentspecial == 1) {
+           alert("The current special is #1")
+        }
+        if (currentspecial == 2)  {
+           alert("The current special is #2")
+        }
+        if (currentspecial == 3 )  {
+           alert("The current special is #3")
+        }
+        currentspecial = currentspecial + 1
+        if (currentspecial > 3) {
+          currentspecial = 1
+        }
+ 
+    }
