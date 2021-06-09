@@ -2,6 +2,12 @@ body {
     text-align:center;
 
 }
-h2 {
-    color: rgb(29, 29, 145);
+.lab3 {
+    color: orchid;
+ }
+ .lab2 {
+    color: greenyellow;
+ }
+ .lab1 {
+    color: darkorange;
  }
