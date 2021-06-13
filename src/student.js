@@ -1,7 +1,12 @@
+var customertype = "direct";
 var myName = "William";
 var classDescription = "Computer Science 190";
 var theDate = "6/8/2021";
 
+
+function changetype (customertype) {
+    
+}
 
 function confirmlink(linkname) {
     if (confirm("Are you sure you want to jump to " + linkname + "?"))
