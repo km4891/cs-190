@@ -17,6 +17,25 @@ function changetype () {
         window.alert("Customer Type has changed to " + customertype);
         console.log("hi1");
 
+    } else if (customertype = 'subscription') {
+        newtype = 'direct';
+        customertype = newtype;
+        window.alert("Customer Type has changed to " + customertype);
+        console.log("hi2");
+    }
+}
+
+function displaytype (changetype) {
+    if (customertype == 'direct') {
+        window.alert("Buy Now! From this web page! My children need new shoes! " + customertype);
+        console.log("hi");
+    } else if (customertype == 'advertising') {
+        window.alert("Support our advertisers! Click on an ad, so I can make money! " + customertype);
+        console.log("hi1");
+
+    } else if (customertype = 'subscription') {
+        window.alert("Renew your subscription today! My children need medicine! " + customertype);
+        console.log("hi2");
     }
 }
 
