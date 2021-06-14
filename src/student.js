@@ -1,11 +1,23 @@
-var customertype = "direct";
 var myName = "William";
 var classDescription = "Computer Science 190";
 var theDate = "6/8/2021";
 
+var customertype = 'direct';
 
-function changetype (customertype) {
-    
+function changetype () {
+    var newtype;
+    if (customertype == 'direct') {
+        newtype = 'advertising';
+        customertype = newtype;
+        window.alert("Customer Type has changed to " + customertype);
+        console.log("hi");
+    } else if (customertype == 'advertising') {
+        newtype = 'subscription';
+        customertype = newtype;
+        window.alert("Customer Type has changed to " + customertype);
+        console.log("hi1");
+
+    }
 }
 
 function confirmlink(linkname) {
