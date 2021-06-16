@@ -4,6 +4,15 @@ var theDate = "6/8/2021";
 
 var customertype = 'direct';
 
+
+function getName () {
+    var name = window.prompt("Enter you name");
+    
+}
+
+
+
+
 function changetype () {
     var newtype;
     if (customertype == 'direct') {
