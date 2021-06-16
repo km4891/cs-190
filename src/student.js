@@ -20,6 +20,21 @@ function getName () {
 
 }
 
+function getAge () {
+    var yourAge = prompt("Please enter your name");
+  if (yourAge.length > 50) {
+      alert("You're a senior citizen");
+      document.getElementById("yourage").innerHTML = "Your name is: " + yourAge;
+  } else if (yourAge.length < 18) {
+      alert("You're a kid");
+      document.getElementById("yourage").innerHTML = "Your name is: " + yourAge;
+  } else if (yourAge.length < 50) {
+      alert("You're an adult")
+      document.getElementById("yourage").innerHTML = "Your name is: " + yourAge;
+  }
+
+}
+
 
 
 
