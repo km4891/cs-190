@@ -7,8 +7,15 @@ var customertype = 'direct';
 
 function getName () {
     var person = prompt("Please enter your name");
-  if (person != null) {
-    document.getElementById("yourname").innerHTML = person;
+  if (person.length > 10) {
+      alert("You have a long name");
+      document.getElementById("yourname").innerHTML = "Your name is: " + person;
+  } else if (person.length < 5) {
+      alert("You have a short name");
+      document.getElementById("yourname").innerHTML = "Your name is: " + person;
+  } else if (person.length < 10) {
+      alert("You have a medium name")
+      document.getElementById("yourname").innerHTML = "Your name is: " + person;
   }
 
 }
