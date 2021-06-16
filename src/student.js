@@ -6,8 +6,11 @@ var customertype = 'direct';
 
 
 function getName () {
-    var name = window.prompt("Enter you name");
-    
+    var person = prompt("Please enter your name");
+  if (person != null) {
+    document.getElementById("yourname").innerHTML = person;
+  }
+
 }
 
 
