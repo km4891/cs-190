@@ -22,16 +22,19 @@ function getName () {
 
 function getAge () {
     var yourAge = prompt("Please enter your name");
-  if (yourAge.length > 50) {
-      alert("You're a senior citizen");
-      document.getElementById("yourage").innerHTML = "Your name is: " + yourAge;
-  } else if (yourAge.length < 18) {
-      alert("You're a kid");
-      document.getElementById("yourage").innerHTML = "Your name is: " + yourAge;
-  } else if (yourAge.length < 50) {
-      alert("You're an adult")
-      document.getElementById("yourage").innerHTML = "Your name is: " + yourAge;
-  }
+   
+    // yourAge = parseInt(yourAge, 10);
+    console.log(yourAge);
+        if (yourAge > 50) {
+            alert("You're a senior citizen");
+            document.getElementById("yourage").innerHTML = "Your age is: " + yourAge;
+        } else if (yourAge < 50 && yourAge > 18) {
+            alert("You're an adult");
+            document.getElementById("yourage").innerHTML = "Your age is: " + yourAge;
+        } else if (yourAge < 18) {
+            alert("You're a kid")
+            document.getElementById("yourage").innerHTML = "Your age is: " + yourAge;
+        }
 
 }
 
