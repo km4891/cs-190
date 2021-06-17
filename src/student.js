@@ -22,9 +22,6 @@ function getName () {
 
 function getAge () {
     var yourAge = prompt("Please enter your name");
-   
-    // yourAge = parseInt(yourAge, 10);
-    console.log(yourAge);
         if (yourAge > 50) {
             alert("You're a senior citizen");
             document.getElementById("yourage").innerHTML = "Your age is: " + yourAge;

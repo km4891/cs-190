@@ -2,15 +2,23 @@ body {
     text-align:center;
 
 }
-.lab4 {
-   color: darkred;
-}
-.lab3 {
-    color: orchid;
+
+ .lab {
+    color: #ffce00;
  }
- .lab2 {
-    color: greenyellow;
+
+ #header {
+   height: 200px;
+   background: url("../src/img/coc.jpg") center no-repeat;
+   background-size: cover;
+
  }
- .lab1 {
-    color: darkorange;
- }
+
+ body {
+   margin: 0;
+   padding: 0;
+   }
+ 
+ /* body {
+    background-color: #003b70;
+ } */
