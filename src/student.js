@@ -4,18 +4,29 @@ var theDate = "6/8/2021";
 var customertype = 'direct';
 
 function getCards () {
-    console.log("hi");
-    var cardNum = prompt ("Enter a number between 2 & 7");
-    // var i = 0;
-        if (cardNum > 1 && cardNum < 7) {
-            console.log("hi2");
-            for (var i = 0; i < cardNum; i++) {
-                console.log("hi3");
-                cardyard = cardNum[i];
-                document.getElementById('yourcards').textContent = "Card#" + cardyard;
-            }
+   var spans;
+   var clear = "";
+
+   do {
+    document.getElementById('yourcards').innerHTML = clear;
+
+    var cardNum = prompt("enter a number between 2 & 7");
+    if (cardNum < 2 || cardNum > 7) {
+        alert ("please enter a valid number");
+    }
+    if (cardNum > 2 || cardNum < 7) {
+        for (var i = 0; i < cardNum; i++ ) {
+            spans = `<span id="card${i}">Card #${i}</span>`;
+            document.getElementById('yourcards').innerHTML += spans;
         }
+    }
+   } while (cardNum > 7 || cardNum < 2){
+
+   }
 }
+
+
+
 
 
 

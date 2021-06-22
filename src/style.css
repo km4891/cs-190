@@ -31,3 +31,7 @@ body {
       color: darkblue;
       font-size: 24px;
     }
+
+    span{
+      display: inline-block !important;
+   }
