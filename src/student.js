@@ -1,8 +1,22 @@
 var myName = "William";
 var classDescription = "Computer Science 190";
 var theDate = "6/8/2021";
-
 var customertype = 'direct';
+
+function getCards () {
+    console.log("hi");
+    var cardNum = prompt ("Enter a number between 2 & 7");
+    // var i = 0;
+        if (cardNum > 1 && cardNum < 7) {
+            console.log("hi2");
+            for (var i = 0; i < cardNum; i++) {
+                console.log("hi3");
+                cardyard = cardNum[i];
+                document.getElementById('yourcards').textContent = "Card#" + cardyard;
+            }
+        }
+}
+
 
 
 function getName () {
