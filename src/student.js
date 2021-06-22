@@ -25,6 +25,28 @@ function getCards () {
    }
 }
 
+function getBreaks () {
+    var breakUp;
+    var clear = "";
+ 
+    do {
+     document.getElementById('yourbreaks').innerHTML = clear;
+ 
+     var breakNum = prompt("enter a number between 1 & 5");
+     if (breakNum < 1 || breakNum > 5) {
+         alert ("please enter a valid number");
+     }
+     if (breakNum> 1 || breakNum < 5) {
+         for (var i = 0; i < breakNum; i++ ) {
+             breakUp = `<br> This is a break`;
+             document.getElementById('yourbreaks').innerHTML += breakUp;
+         }
+     }
+    } while (breakNum > 5 || breakNum < 1){
+ 
+    }
+ }
+
 
 
 
