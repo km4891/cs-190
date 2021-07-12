@@ -12,7 +12,7 @@ function getFooter (busName, address, phone) {
     // var data = "<table style='width:100%'><tr style='background-color:#4b5320'><td >";
     // data +="<h1 style='text-align:right, text-size:20px'>" + busName + "</h1>";
     // data +="</td></tr></table>";
-    data = `<footer class="bg-dark py-3">
+    data = `<footer>
     <p style="text-align:center" class="text-light"><b>
     ${busName} 
     Phone Number: ${phone}
