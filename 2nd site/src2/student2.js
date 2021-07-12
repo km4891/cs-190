@@ -12,11 +12,16 @@ function getFooter (busName, address, phone) {
     // var data = "<table style='width:100%'><tr style='background-color:#4b5320'><td >";
     // data +="<h1 style='text-align:right, text-size:20px'>" + busName + "</h1>";
     // data +="</td></tr></table>";
-    var data = "<p class='info'> Location: " + address + "</p>"
-    data += "<p class='info'> Phone #: " + phone + "</p>"
-    data += "<p class='info'> All Rights Reserved: " + busName + "</p>"
-    document.getElementById('footer').innerHTML = data;
+    data = `<footer class="bg-dark py-3">
+    <p style="text-align:center" class="text-light"><b>
+    ${busName} 
+    Phone Number: ${phone}
+    Address: ${address} </b> </p>
+    App Name: ${navigator.appName} /
+    App Version: ${navigator.appVersion}</p>
+</footer>`;
+document.getElementById("footer").innerHTML = data;
+}
 
 
     
-}
