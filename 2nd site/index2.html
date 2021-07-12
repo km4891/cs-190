@@ -14,6 +14,7 @@
         <script src="./src2/student2.js"></script>
     </head>
     <body>
+       
         <header>
             <div id="header" class="header"> 
                 <!-- <h1 id="header"> -->
@@ -24,15 +25,23 @@
             </div>
         </header>
         <h1>Web 2</h1>
-        <table style='width:100%' cellpadding='5' border = 1><tr>
+        <!-- <table style='width:100%' cellpadding='5' border = 1><tr>
             <td style='width:10%'><div id='my_menu'>Menu</div></td>
             <td style='width:90%'><div id='my_main'> Main Web Page</div></td>
-            </tr></table>
+            </tr></table> -->
+        
+        <div id="menu"></div>
+        <div id="main">Main Page</div>
+
         <footer>
             <div id="footer" class="footer">
                     <script>getFooter(busName, address, phone);</script>
                 </div>
         </footer>
+        <script>
+            document.getElementById("menu").innerHTML = makeMenu();
+            document.getElementById("main").innerHTML = makeMain();
+        </script>
         
     </body>
 </html>
